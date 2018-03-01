@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo strace -o "|../fw_updater/reset" -eioctl /usr/bin/avrdude-original -v -c arduino -p atmega328p -P /dev/ttyAMA0 -b 57600 -U flash:w:$@
