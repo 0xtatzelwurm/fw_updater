@@ -1,0 +1,17 @@
+#!/bin/bash
+
+sudo apt-get install -y avrdude python-dev python-rpi.gpio
+
+echo "install avrdude autoreset"
+
+sudo chmod +x reset
+
+sudo chmod +x fwupdater
+
+if [ ! -f /usr/bin/avrdude-original ]; then 
+	sudo mv /usr/bin/avrdude /usr/bin/avrdude-original
+fi
+
+
+
+

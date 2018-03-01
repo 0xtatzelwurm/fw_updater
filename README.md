@@ -2,7 +2,7 @@
 Update FW
 
 INSTALL:
-sudo apt-get install -y avrdude python-dev python-rpi.gpio
+./install
 
 RUN:
 ./fw_updater hexfile.hex
